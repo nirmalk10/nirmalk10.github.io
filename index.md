@@ -4,7 +4,7 @@ This site documents hands-on experimentation with 5G, SDRs, and AI-enabled wirel
 
 The goal of this repository is to serve as a technical reference for reproducing system bring-up, understanding configuration dependencies, and documenting lessons learned while building and validating end-to-end cellular workflows. Where applicable, configuration changes, fixes, and design choices are explained with enough detail to be reused or adapted in similar environments.
 
-## Lab Notes
+
 - [Jetson AGX Orin Setup](/Lab-Notes/jetson-orin-setup)
 
 - [Hardware Setup ](/Lab-Notes/hardware-setup)
