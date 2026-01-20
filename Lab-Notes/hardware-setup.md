@@ -12,7 +12,7 @@ This page documents the hardware components used in my SDR-based cellular and NT
 - Connected to the host system for baseband processing and RF experimentation
 
 **Image placeholder:**
-```md
+
 ![B206 SDR front view](/assets/images/hardware/b206-front.jpg)
 
 
