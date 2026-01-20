@@ -13,7 +13,7 @@ This page documents the hardware components used in my SDR-based cellular and NT
 
 **Image placeholder:**
 
-![B206 SDR front view](/assets/images/hardware/b206-front.jpg)
+![B206 SDR front view](/assets/images/hardware/b206-front.png)
 
 
 Cellular Modem
@@ -29,7 +29,7 @@ This modem is used for 5G NR experimentation and supports advanced cellular feat
 
 Image placeholder:
 
-![Quectel RM520N-GL module](/assets/images/hardware/quectel-rm520.jpg)
+![Quectel RM520N-GL module](/assets/images/hardware/quectel-rm520.png)
 
 
   M.2 Development Board
@@ -46,7 +46,7 @@ https://store-us.gl-inet.com/products/m2-5g-development-board
 
 Image placeholder:
 
-![GL.iNet M.2 5G development board](/assets/images/hardware/m2-dev-board.jpg)
+![GL.iNet M.2 5G development board](/assets/images/hardware/m2-dev-board.png)
 
 
 
@@ -71,7 +71,7 @@ These components are used to route RF signals between SDRs, antennas, and measur
 
 Image placeholder:
 
-![RF power splitters](/assets/images/hardware/rf-splitters.jpg)
+![RF power splitters](/assets/images/hardware/rf-splitters.png)
 
 
 
@@ -89,7 +89,7 @@ https://shop.sysmocom.de/sysmoISIM-SJA5-9FV-SIM-USIM-ISIM-Card-10-pack-with-ADM-
 
 Image placeholder:
 
-![sysmoISIM cards](/assets/images/hardware/sysmoisim.jpg)
+![sysmoISIM cards](/assets/images/hardware/sysmoisim.png)
 
 
   Notes
