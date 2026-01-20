@@ -6,6 +6,7 @@ This page documents the steps required to successfully register a UE and validat
 
 For detailed instructions 
 https://nvlabs.github.io/sionna/rk/setup/quectel.html
+
 https://nvlabs.github.io/sionna/rk/setup/perf_test.html
 
 
@@ -91,7 +92,7 @@ The gNB was started using the Sionna Research Kit helper script, which abstracts
 ### Startup Command
 The system was launched using:
 
-```bash
+```
 sionna-rk/scripts/start_system.sh b200
 ```
 
@@ -101,7 +102,7 @@ B200 Configuration Directory and .env File
 When using the b200 option, a dedicated configuration directory was created containing a .env file. This file defines the system and gNB configuration files, as well as USRP-specific parameters.
 
 .env Configuration Used
-bash
+
 
 SYSTEM_CONFIG="../common/sys_config.yaml"
 GNB_CONFIG="../common/gnb.sa.band78.24prbs.conf"
@@ -115,13 +116,13 @@ Thread Pool Configuration Update
 The default thread pool configuration was adjusted to improve runtime stability.
 
 Original (disabled)
-```bash
+```
 
 #GNB_THREAD_POOL="--thread-pool ${SRK_THREAD_POOL:-6,7,8,9,10,11}"
 
 Updated Configuration
-b
-Copy code
+
+
 GNB_THREAD_POOL="--thread-pool ${SRK_THREAD_POOL:-6,7}"
 ```
 
@@ -129,13 +130,13 @@ GNB_THREAD_POOL="--thread-pool ${SRK_THREAD_POOL:-6,7}"
 USRP B206 Configuration
 The .env file was also updated to explicitly enable B200/B206-class devices:
 
-bash
+
 
 USE_B2XX=yes
 In addition, the USRP serial number was configured to match the connected USRP B206-mini:
 
 bash
-Copy code
+
 USRP_SERIAL=<B206_SERIAL_NUMBER>
 Setting the correct serial number ensured that UHD consistently selected the intended device when multiple USB devices were present.
 
