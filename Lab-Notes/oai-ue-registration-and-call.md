@@ -182,7 +182,8 @@ wwan0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
   
 Connectivity can be verified using ping
 
-```ping -I wwan0 google.com
+```
+ping -I wwan0 google.com
 PING google.com (142.250.191.46) from 12.1.1.2 wwan0: 56(84) bytes of data.
 64 bytes from nuq04s42-in-f14.1e100.net (142.250.191.46): icmp_seq=1 ttl=113 time=33.5 ms
 64 bytes from nuq04s42-in-f14.1e100.net (142.250.191.46): icmp_seq=2 ttl=113 time=46.5 ms
