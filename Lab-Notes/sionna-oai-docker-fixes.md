@@ -82,7 +82,7 @@ FlexRIC enforces a minimum GCC version of 12. The default toolchain did not meet
 
 Patch
 ```diff
-Copy code
+
 --- a/docker/Dockerfile.build.ubuntu.cuda
 +++ b/docker/Dockerfile.build.ubuntu.cuda
 @@ -63,6 +63,13 @@
@@ -100,7 +100,7 @@ The Dockerfile originally requested Boost 1.83, which caused ABI and availabilit
 
 Patch
 ```diff
-Copy code
+
 --- a/docker/Dockerfile.gNB.ubuntu.cuda
 +++ b/docker/Dockerfile.gNB.ubuntu.cuda
 @@ -39,7 +40,7 @@
