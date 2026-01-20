@@ -3,6 +3,37 @@
 This page documents the hardware components used in my SDR-based cellular and NTN experimentation setup. The goal is to clearly list each major component, its purpose, and how it fits into the overall system.
 ---
 The latest setup instructions for dgx-spark can be found here : https://nvlabs.github.io/sionna/rk/setup.html#your-first-call
+## Compute Platform
+
+### NVIDIA Jetson AGX Orin (64GB)
+
+The NVIDIA Jetson AGX Orin is used as the primary compute platform for SDR-based cellular and NTN experimentation. It provides sufficient CPU, GPU, and memory resources to run OpenAirInterface (OAI), Sionna Research Kit workflows, and supporting Docker containers. The platform is well-suited for edge and research deployments that require GPU acceleration in a compact form factor.
+
+While the AGX Orin includes **64 GB of internal storage**, this capacity is very limited for practical development. Source builds, container images, logs, and datasets can quickly exhaust the internal storage, making external storage necessary for sustained experimentation.
+
+
+
+![Jetson AGX Orin](/assets/images/hardware/jetson-agx-orin.png)
+
+---
+
+## Storage
+
+### NVMe SSD
+
+An NVMe SSD was added to significantly expand storage capacity and improve I/O performance.
+
+- **Model:** WD_BLACK SN770  
+- **Capacity:** 2 TB  
+ 
+
+The NVMe drive is used to store source code, Docker images, build artifacts, logs, and experimental data. Moving these workloads off the internal storage improves reliability and reduces build and runtime friction when working with large containers and repeated rebuilds.
+
+
+
+![WD_BLACK SN770 NVMe SSD](/assets/images/hardware/wd-black-sn770.png)
+
+
 
 ## Software Defined Radio (SDR)
 
