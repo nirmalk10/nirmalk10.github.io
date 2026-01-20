@@ -16,8 +16,8 @@ This page documents the hardware components used in my SDR-based cellular and NT
 ![B206 SDR front view](/assets/images/hardware/b206-front.png)
 
 
-Cellular Modem
-Quectel RM520N-GL
+###  Cellular Modem
+###  Quectel RM520N-GL
 
 DigiKey Part: 2958-RM520NGLAA-M20-SGASA-ND
 
@@ -32,8 +32,8 @@ This modem is used for 5G NR experimentation and supports advanced cellular feat
 ![Quectel RM520N-GL module](/assets/images/hardware/quectel-rm520.png)
 
 
-  M.2 Development Board
-GL.iNet M.2 5G Development Board
+###   M.2 Development Board
+###  GL.iNet M.2 5G Development Board
 
 Provides an M.2 interface for the Quectel RM520N-GL
 
@@ -50,7 +50,7 @@ https://store-us.gl-inet.com/products/m2-5g-development-board
 
 
 
-  RF Power Splitters / Dividers
+###   RF Power Splitters / Dividers
 Power Divider (SMA, RoHS)
 
 DigiKey Part: 3157-ZN4PD1-63-S+-ND
@@ -74,7 +74,7 @@ These components are used to route RF signals between SDRs, antennas, and measur
 
 ![RF power splitters](/assets/images/hardware/rf-splitter2.png)
 
-  SIM / USIM / ISIM Cards
+###   SIM / USIM / ISIM Cards
 sysmoISIM SJA5 (USIM / ISIM)
 
 10-pack with ADM keys
