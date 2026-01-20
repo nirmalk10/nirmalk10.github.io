@@ -1,5 +1,5 @@
 # Welcome 
 
 ## Lab Notes
-- [Jetson AGX Orin Setup](./Lab-Notes/jetson-orin-setup)
+- [Jetson AGX Orin Setup](/Lab-Notes/jetson-orin-setup)
 
