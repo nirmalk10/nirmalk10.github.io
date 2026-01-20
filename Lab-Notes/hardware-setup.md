@@ -1,6 +1,6 @@
 # Hardware Setup Overview
 
-This page documents the hardware components used in my SDR-based cellular and NTN experimentation setup. The goal is to clearly list each major component, its purpose, and how it fits into the overall system.
+This page documents the hardware components used in my SDR-based experimentation setup. The goal is to clearly list each major component, its purpose, and how it fits into the overall system.
 ---
 The latest setup instructions for dgx-spark can be found here : https://nvlabs.github.io/sionna/rk/setup.html#your-first-call
 ## Compute Platform
