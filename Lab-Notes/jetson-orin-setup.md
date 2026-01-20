@@ -38,18 +38,21 @@ After setup, I verified the installation using the following commands:
 
 
 
-cat /etc/nv_tegra_release 
-# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64, DATE: Thu Sep 18 22:54:44 UTC 2025
+```bash
+cat /etc/nv_tegra_release
+# R36 (release), REVISION: 4.7, GCID: 42132812, BOARD: generic, EABI: aarch64,
+# DATE: Thu Sep 18 22:54:44 UTC 2025
 # KERNEL_VARIANT: oot
 TARGET_USERSPACE_LIB_DIR=nvidia
 TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia
 
-
 lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 22.04.5 LTS
-Release:	22.04
-Codename:	jammy
+Distributor ID: Ubuntu
+Description: Ubuntu 22.04.5 LTS
+Release: 22.04
+Codename: jammy
+
+
 
 
