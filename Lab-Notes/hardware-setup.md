@@ -1,7 +1,7 @@
 # Hardware Setup Overview
 
 This page documents the hardware components used in my SDR-based cellular and NTN experimentation setup. The goal is to clearly list each major component, its purpose, and how it fits into the overall system.
-
+The latest setup instructions for dgx-spark can be found here : https://nvlabs.github.io/sionna/rk/setup.html#your-first-call
 ---
 
 ## Software Defined Radio (SDR)
@@ -99,5 +99,45 @@ This setup allows flexible testing across SDR-based and modem-based workflows
 
 Images are included to visually document physical connections and hardware layout
 
+                    ┌──────────────────────────┐
+                    │        Host PC            │
+                    │     (your laptop/desktop) │
+                    └───────────┬──────────────┘
+                                │ USB 3.0
+                                │
+                ┌───────────────▼────────────────┐
+                │  Quectel RM520N-GL 5G Modem     │
+                │  (M.2 + GL.iNet Dev Board)     │
+                └───────┬───────┬───────┬────────┘
+                        │       │       │
+                      ANT0    ANT1    ANT2    ANT3
+                        │       │       │
+                        └───────┴───────┴─────────┐
+                                                  │
+                                     ┌────────────▼────────────┐
+                                     │   4-Way RF Power Splitter │
+                                     │   ZN4PD1-63-S+ (SMA)      │
+                                     └────────────┬────────────┘
+                                                  │
+                                          ┌───────▼────────┐
+                                          │  20 dB Attenuator│
+                                          └───────┬────────┘
+                                                  │
+                                     ┌────────────▼────────────┐
+                                     │   2-Way RF Splitter      │
+                                     │   ZN2PD2-50-S+           │
+                                     └───────┬────────┬────────┘
+                                             │        │
+                                           TX (SMA)  RX (SMA)
+                                             │        │
+                                  ┌──────────▼────────▼──────────┐
+                                  │       USRP B206-mini          │
+                                  └──────────┬────────────────────┘
+                                             │ USB 3.0
+                                             │
+                              ┌──────────────▼──────────────┐
+                              │       Jetson AGX Orin         │
+                              │     (OAI gNB / AI workloads)  │
+                              └──────────────────────────────┘
 
 
