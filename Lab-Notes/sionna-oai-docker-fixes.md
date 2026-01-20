@@ -111,6 +111,45 @@ Copy code
 Rationale:
 Boost 1.74 is readily available on Ubuntu 22.04 and avoids link-time and runtime incompatibilities.
 
+
+## Docker Compose Changes for `oai-gnb`
+
+In addition to Dockerfile-level fixes, several changes were required in `docker-compose.yaml` for the `oai-gnb` service. These changes addressed runtime permission issues, UHD access problems, and scheduling stability when running the gNB with a USRP B206-mini.
+
+### Privileged Container Execution
+
+The gNB container was configured to run in privileged mode:
+
+```yaml
+privileged: true
+
+```
+The container was explicitly limited to eight CPU cores:
+```
+deploy:
+  resources:
+    limits:
+      cpus: "8.0"
+```
+Capability dropping was initially evaluated but ultimately disabled:
+```
+#cap_drop:
+#  - ALL
+```
+
+Dropping all Linux capabilities prevented UHD from accessing the USRP device correctly.
+
+The UHD runtime libraries inside the container were explicitly aligned with the host UHD installation:
+```
+volumes:
+  - /usr/local/lib/libuhd.so.4.9.0:/usr/local/lib/libuhd.so.4.9.0
+  - /usr/local/lib/libuhd.so:/usr/local/lib/libuhd.so
+```
+
+This ensured that the gNB used UHD 4.9 consistently at runtime.
+
+
+
 Summary
 These Docker-level changes enabled a stable and reproducible build of the Sionna Research Kit with OAI on a JetPack 6 environment:
 
