@@ -11,7 +11,7 @@ This page documents the hardware components used in my SDR-based cellular and NT
 - Supports wideband operation suitable for cellular and experimental wireless work
 - Connected to the host system for baseband processing and RF experimentation
 
-**Image placeholder:**
+
 
 ![B206 SDR front view](/assets/images/hardware/b206-front.png)
 
@@ -27,7 +27,7 @@ Manufacturer Part Number: RM520NGLAA-M20-SGASA
 
 This modem is used for 5G NR experimentation and supports advanced cellular features required for modern network testing.
 
-Image placeholder:
+
 
 ![Quectel RM520N-GL module](/assets/images/hardware/quectel-rm520.png)
 
@@ -44,7 +44,7 @@ Used as the primary development and integration platform for the modem
 Product link:
 https://store-us.gl-inet.com/products/m2-5g-development-board
 
-Image placeholder:
+
 
 ![GL.iNet M.2 5G development board](/assets/images/hardware/m2-dev-board.png)
 
@@ -69,11 +69,10 @@ Supports wideband RF operation across multiple GHz
 
 These components are used to route RF signals between SDRs, antennas, and measurement equipment.
 
-Image placeholder:
 
 ![RF power splitters](/assets/images/hardware/rf-splitters.png)
 
-
+![RF power splitters](/assets/images/hardware/rf-splitter2.png)
 
   SIM / USIM / ISIM Cards
 sysmoISIM SJA5 (USIM / ISIM)
@@ -87,7 +86,7 @@ Used for cellular authentication and network testing
 Product link:
 https://shop.sysmocom.de/sysmoISIM-SJA5-9FV-SIM-USIM-ISIM-Card-10-pack-with-ADM-keys-9FV-chip/sysmoISIM-SJA5-9FV-10p-adm
 
-Image placeholder:
+
 
 ![sysmoISIM cards](/assets/images/hardware/sysmoisim.png)
 
