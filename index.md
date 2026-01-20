@@ -5,3 +5,6 @@
 
 - [Hardware Setup ](/Lab-Notes/hardware-setup)
 
+- [Sionna Docker Fixes ](/Lab-Notes/sionna-oai-docker-fixes)
+
+
