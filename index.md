@@ -13,7 +13,7 @@ The goal of this repository is to serve as a technical reference for reproducing
 
 - [UE Registration and Call Flow](/Lab-Notes/oai-ue-registration-and-call.md)
 
-- [UE Registration and Call Flow](/Lab-Notes/sionna-neural-demapper-trt.md)
+- [Neural Demapper training ](/Lab-Notes/sionna-neural-demapper-trt.md)
 
 
   
